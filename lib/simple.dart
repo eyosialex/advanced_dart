@@ -22,6 +22,19 @@ void currentUSer({
   print("id :$id");
 }
 main(){
+  List<int> numbers=[1,4,9,5];
+  List <int> twice=numbers.map((toElement)=>toElement*2).toList();
+  print(twice);
+  List<int> evens=numbers.where((num)=> num%2==0).toList();
+  print(evens);
+  List<Map<String, dynamic>> users = [
+    {"name": "Alex", "age": 22},
+    {"name": "John", "age": 25},
+  ];
+  for(Map usit in users ){
+    print("name:${usit["name"]}");
+    print("age:${usit["age"]}");
+  }
   Collection L=Collection();
   setcollection sc=setcollection();
   sc.check("eyosi");

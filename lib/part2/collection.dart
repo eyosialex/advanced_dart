@@ -45,3 +45,16 @@ bool check(name){
 return names.contains(name);
 }
 }
+class mapcollection{
+  Map<String,String> students={
+    "name":"Eyosi",
+    "age":"12"
+  };
+  void display(
+  ){
+    students.forEach((key, value) {
+      print("key:${key}Value: ${value}");
+    });
+  }
+ 
+}
