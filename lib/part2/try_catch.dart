@@ -12,5 +12,8 @@ class TryCatch {
       throw Exception("this is invalid age ");
       
     }
+    else {
+      print("valid age ");
+    }
   }
 }
