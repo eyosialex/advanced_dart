@@ -1,6 +1,6 @@
 import 'dart:io';
 import './part2/collection.dart';
-
+import './part2/try_catch.dart';
 //Enum
 enum UserRole { admin, user, guest }
 //function with optional parameter
@@ -22,6 +22,17 @@ void currentUSer({
   print("id :$id");
 }
 main(){
+ 
+  TryCatch t=TryCatch();
+   try {
+     t.checkAge(5);
+    
+  } catch (e) {
+    print(e);
+  }
+  print("++++====++++");
+  t.t();
+
   List<int> numbers=[1,4,9,5];
   List <int> twice=numbers.map((toElement)=>toElement*2).toList();
   print(twice);
