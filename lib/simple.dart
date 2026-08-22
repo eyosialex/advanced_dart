@@ -23,6 +23,11 @@ void currentUSer({
 }
 main(){
   Collection L=Collection();
+  setcollection sc=setcollection();
+  sc.check("eyosi");
+  sc.addElement("mahi");
+  sc.getallElement();
+  // list of all file 
   L.addToLIst("eyosi");
   L.printalllistelement();
   L.insertELemnt(1,"deva");
