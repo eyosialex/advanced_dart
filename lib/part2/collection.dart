@@ -31,3 +31,17 @@ names.forEach((name){
 }
 
 }
+class setcollection{
+Set<String>names={"eyosi","efrem","isru"};
+void getallElement(){
+  for (String name in names){
+    print(name);
+  }
+}
+void addElement(name){
+  names.add(name);
+}
+bool check(name){
+return names.contains(name);
+}
+}
