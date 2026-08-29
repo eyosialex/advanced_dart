@@ -43,6 +43,8 @@ enum daylist{
 
 }
 main(){
+  User dad= User(name: "babe",age: 56);
+  dad.display();
   daylist d1=daylist.Monday;
   d1.days1;
   print(d1.days1);

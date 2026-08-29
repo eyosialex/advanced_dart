@@ -1,3 +1,5 @@
+import 'dart:async';
+
 class Collection {
 List<String> names=["Eyosi","efrem"];
 int  getlenth(){
@@ -57,4 +59,15 @@ class mapcollection{
     });
   }
  
+}
+class User {
+  String? name;
+  int? age;
+
+  User({
+    this.name,this.age
+  });
+  void display(){
+    print("name: ${name} and age: ${age}");
+  }
 }
