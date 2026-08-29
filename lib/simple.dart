@@ -39,7 +39,7 @@ enum daylist{
   tuesday("day 2"),
   wednsday("day 3");
   final String  days1;
-  const daylist(this.days1)
+  const daylist(this.days1);
 
 }
 main(){
