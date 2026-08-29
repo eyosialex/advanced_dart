@@ -22,7 +22,15 @@ void currentUSer({
   print("id :$id");
 }
 main(){
- 
+  for (var r in UserRole.values){
+    print(r);
+  }
+  String? name1 ;
+  String name2=name1 ??="eyosi";
+  print( name2);
+  List<String?>? students=[null];
+  print(students);
+
   TryCatch t=TryCatch();
    try {
      t.checkAge(5);
