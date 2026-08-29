@@ -3,6 +3,7 @@ import './part2/collection.dart';
 import './part2/try_catch.dart';
 //Enum
 enum UserRole { admin, user, guest }
+
 //function with optional parameter
 void Message(String name, [String? age]) {
   if (age != null) {
@@ -21,7 +22,33 @@ void currentUSer({
   print("name : $name");
   print("id :$id");
 }
+enum OrderStatus {
+  pending("Waiting for payment"),
+  paid("Payment received"),
+  shipped("Order shipped"),
+  delivered("Order delivered"),
+  cancelled("Order cancelled");
+
+  final String message;
+
+  const OrderStatus(this.message);
+}
+enum daylist{
+
+  Monday("day 1"),
+  tuesday("day 2"),
+  wednsday("day 3");
+  final String  days1;
+  const daylist(this.days1)
+
+}
 main(){
+  daylist d1=daylist.Monday;
+  d1.days1;
+  print(d1.days1);
+OrderStatus os1=OrderStatus.shipped;
+print(os1.message);
+
   for (var r in UserRole.values){
     print(r);
   }
