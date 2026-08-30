@@ -71,3 +71,35 @@ class User {
     print("name: ${name} and age: ${age}");
   }
 }
+
+class rectangel{
+  int hight;
+  int width;
+  rectangel (
+    {
+      required this.width,
+      required this.hight,
+    });
+  void getarea() {
+    int area=width*hight;
+    print("area ${area}");
+  }
+}
+class bankAccount{
+ String owner;
+ double account;
+ bankAccount({
+ required this.owner,
+ required this.account
+ });
+ void deposit(double deposit){
+  account=account+deposit;
+ }
+ void withdraw(double withdraw){
+  account-=withdraw;
+ }
+ void printshow(){
+  print("your balance ${account}");
+ }
+
+}
