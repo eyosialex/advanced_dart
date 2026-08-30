@@ -42,7 +42,8 @@ enum daylist{
   const daylist(this.days1);
 
 }
-main(){
+main(){rectangel rag1=rectangel(width: 67, hight: 67);
+
   User dad= User(name: "babe",age: 56);
   dad.display();
   daylist d1=daylist.Monday;
