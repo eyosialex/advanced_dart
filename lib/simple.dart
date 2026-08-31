@@ -1,6 +1,14 @@
 import 'dart:io';
 import './part2/collection.dart';
 import './part2/try_catch.dart';
+Future<int> twice1(int a) {
+  return Future.delayed(Duration(seconds: 2), () => 2 * a);
+}
+Stream<String> data() {
+  return Stream.periodic(const Duration(seconds: 2), (value) {
+    return "foo";
+  });
+}
 //Enum
 enum UserRole { admin, user, guest }
 
@@ -42,7 +50,12 @@ enum daylist{
   const daylist(this.days1);
 
 }
-main(){rectangel rag1=rectangel(width: 67, hight: 67);
+main() async {
+    await for (final value in data()){
+    print ( value);}
+  int a = await twice1(8);
+  print("twice of the number is: $a");
+  rectangel rag1=rectangel(width: 67, hight: 67);
 
   User dad= User(name: "babe",age: 56);
   dad.display();

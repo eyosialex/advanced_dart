@@ -8,8 +8,12 @@ void main ( ){
   for ( final value in get123())
   {print(value);
   if (value==2){
+    
     break;
   }
+else {
+ print("value is : $value");
+}
 
   }
 }
