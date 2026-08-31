@@ -14,13 +14,20 @@ class dog extends animal{
   void display(){
     print("name:${this.name} sound:${this.sound} wolk:${this.wolk}");
   }
+  @override
+  void eat(){
+    print("the dog can eat");
+  }
+ 
+  }
   
-}
+
 
 void main()
 {
 dog d=dog("run run away","pupy","dady");
 d.display();
+d.eat();
 
 
 
