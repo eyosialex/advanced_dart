@@ -19,6 +19,7 @@ class dog extends animal{
   }
   @override
   void eat(){
+    super.eat();
     print("the dog can eat");
   }
  
@@ -27,12 +28,15 @@ class dog extends animal{
 
 
 void main()
-{
+{int no=39;
+print(no is int);
 dog d=dog(name: "buchy",
  sound: "woo woo",
  wolk: "run run away");
 d.display();
 d.eat();
+print(d is dog);
+print (d is animal);
 
 
 
