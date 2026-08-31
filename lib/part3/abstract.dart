@@ -1,8 +1,12 @@
-abstract class animal {
-  void sound();
-  void walk();
+ class animal {
+  void sound(){
+    print("wooo wooo woo");
+  }
+  void walk(){
+    print("run run run away");
+  }
 }
-class dog extends animal{
+class dog  implements animal{
   @override
  void sound() {
     // TODO: implement sound"")
