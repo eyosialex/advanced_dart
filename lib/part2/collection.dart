@@ -1,50 +1,52 @@
 import 'dart:async';
 
 class Collection {
-List<String> names=["Eyosi","efrem"];
+
+List<String> Student=["Eyosi","efrem"];
+
 int  getlenth(){
-  return names.length;
+  return Student.length;
 }
 void addToLIst (String name){
-names.add(name);
+Student.add(name);
 }
 bool isempty(){
-  return names.isEmpty;
+  return Student.isEmpty;
 }
 void check(String name){
-  names.contains(name);
+  Student.contains(name);
 }
 void removeElement(String name){
-  names.remove(name);
+  Student.remove(name);
 }
 void insertELemnt(int index ,String name){
-  names.insert(index, name);
+  Student.insert(index, name);
 }
 void removelast(){
-  names.removeLast();
+  Student.removeLast();
 }
 void clear(){
-  names.clear();
+  Student.clear();
 }
 void printalllistelement(){
-names.forEach((name){
+Student.forEach((name){
   print("Name: $name");
 });
 }
 
 }
 class setcollection{
-Set<String>names={"eyosi","efrem","isru"};
+Set<String>Student={"eyosi","efrem","isru"};
 void getallElement(){
-  for (String name in names){
+  for (String name in Student){
     print(name);
   }
 }
 void addElement(name){
-  names.add(name);
+  Student.add(name);
 }
 bool check(name){
-return names.contains(name);
+return Student.contains(name);
 }
 }
 class mapcollection{

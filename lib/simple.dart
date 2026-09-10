@@ -1,6 +1,6 @@
 import 'dart:io';
-import './part2/collection.dart';
-import './part2/try_catch.dart';
+import 'test list and map together/part2/collection.dart';
+import 'test list and map together/part2/try_catch.dart';
 Future<int> twice1(int a) {
   return Future.delayed(Duration(seconds: 2), () => 2 * a);
 }
