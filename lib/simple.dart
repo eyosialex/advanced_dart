@@ -1,7 +1,12 @@
 import 'dart:io';
-import 'test list and map together/part2/collection.dart';
-import 'test list and map together/part2/try_catch.dart';
-Future<int> twice1(int a) {
+
+import 'package:learn_dart/advanced/future.dart';
+import 'package:learn_dart/part2/try_catch.dart';
+
+import './part2/collection.dart';
+import './part2/collection.dart';
+
+Future<int> twice(int a) {
   return Future.delayed(Duration(seconds: 2), () => 2 * a);
 }
 Stream<String> data() {
@@ -42,7 +47,6 @@ enum OrderStatus {
   const OrderStatus(this.message);
 }
 enum daylist{
-
   Monday("day 1"),
   tuesday("day 2"),
   wednsday("day 3");
@@ -73,7 +77,7 @@ print(os1.message);
   print( name2);
   List<String?>? students=[null];
   print(students);
-
+  
   TryCatch t=TryCatch();
    try {
      t.checkAge(5);
